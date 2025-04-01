@@ -2,9 +2,9 @@
 # @Author  : hu_ling_yi
 # @File    : init_data.py.py
 # @Time    : 2025/3/15 12:03
-from app import create_app
-from app.models import Category
-from app.extensions import db
+from app.remindApp import create_app
+from app.remindApp.models import Category
+from app.remindApp import db
 
 app = create_app()
 

@@ -8,7 +8,7 @@ import random
 import jwt
 from flask import current_app
 from werkzeug.security import generate_password_hash, check_password_hash
-from app.models import User
+from app.remindApp.models import User
 from itertools import permutations
 
 # 预生成所有可能的4位不重复数字

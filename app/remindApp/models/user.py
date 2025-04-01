@@ -3,7 +3,7 @@
 # @File    : user.py
 # @Time    : 2025/3/15 11:12
 from datetime import datetime
-from app.extensions import db
+from app.remindApp.extensions import db
 from werkzeug.security import generate_password_hash, check_password_hash
 
 

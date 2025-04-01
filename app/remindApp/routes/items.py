@@ -6,11 +6,11 @@ import os
 import uuid
 from datetime import datetime
 
-from flask import Blueprint, request, jsonify, current_app
+from flask import Blueprint, request, jsonify
 from werkzeug.utils import secure_filename
 
-from config.dev import Config
-from app.models import Item, Category, ItemImage
+from app.config.dev import Config
+from app.remindApp.models import Item, Category, ItemImage
 from ..utils.auth import get_current_user, optimized_generator, decode_token
 from ..extensions import db
 
