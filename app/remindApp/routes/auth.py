@@ -58,3 +58,8 @@ def user_create():
             return jsonify({'code': 400, 'data': {}, 'message': "出现错误:" + e})
     else:
         return jsonify({'code': 400, 'data': {}, 'message': "用户已存在"})
+
+
+@auth_bp.route('/', methods=['GET'])
+def test01():
+    return jsonify({'code': 400, 'msg': '缺少code参数'})
