@@ -12,7 +12,7 @@ auth_bp = Blueprint('auth', __name__)
 
 
 # 登录接口
-@auth_bp.route('user/login', methods=['POST'])
+@auth_bp.route('/user/login', methods=['POST'])
 def user_login():
     code = request.json.get('code')
     if not code:
@@ -62,4 +62,4 @@ def user_create():
 
 @auth_bp.route('/', methods=['GET'])
 def test01():
-    return jsonify({'code': 400, 'msg': '缺少code参数'})
+    return "欢迎使用"
